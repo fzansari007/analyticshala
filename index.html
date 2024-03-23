@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analyticshala</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Hero Section  -->
+    <section id="hero" class="section_container hero">
+      <div class="section_wrapper hero">
+        <nav>
+          <div class="logo">
+            <a href="#hero">
+              <img src="./assets/analyticshala.logo.png" alt="logo" />
+            </a>
+          </div>
+          <div class="nav_icons">
+            <i class="fa-solid fa-bars" onclick="navIconClick('burger')"></i>
+            <i
+              class="fa-solid fa-xmark inactive"
+              onclick="navIconClick('close')"
+            ></i>
+          </div>
+          <div class="nav_links inactive">
+            <a href="#courses" class="nav_link inactive" onclick="closeMenu()"
+              >Courses</a
+            >
+            <a href="#contact" class="nav_link inactive" onclick="closeMenu()"
+              >Contact Us</a
+            >
+            <a href="#about" class="nav_link inactive" onclick="closeMenu()"
+              >About Us</a
+            >
+
+            <div class="social_icons">
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-square-facebook"></i>
+              <i class="fa-brands fa-square-twitter"></i>
+              <i class="fa-brands fa-square-instagram"></i>
+            </div>
+          </div>
+        </nav>
+
+        <div class="hero_main">
+          <p>-Your path to analytics-</p>
+          <p>-Unlock the power of data with our analytic courses-</p>
+          <p>Are you afraid of technical challenges</p>
+          <p>
+            Join our courses that drive success with analytics - empowering the
+            data-driven future
+          </p>
+
+          <!-- <div class="hero_logo">Analytic-Shala</div> -->
+          <div class="hero_header">Learn from <br />Anywhere, Anytime !</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Available Courses Section  -->
+    <section id="courses" class="section_container courses">
+      <div class="section_wrapper courses">
+        <div class="section_header">
+          <h2>Available Courses</h2>
+        </div>
+        <div class="courses_main">
+          <!-- <div class="arrows">
+            <div class="arrow_left"><</div>
+            <div class="arrow_right">></div>
+          </div> -->
+          <div class="courses_cards">
+            <div class="courses_card">
+              <div class="courses_card_img">
+                <img
+                  src="./assets/data-visualization.png"
+                  alt="visualization-img"
+                />
+              </div>
+              <div class="courses_card_title">Data Visualization</div>
+              <div class="courses_card_info">Python for professionals</div>
+
+              <div class="course_detail">
+                <div class="course_detail_hours">
+                  <span>Hours</span> | <span>200+</span>
+                </div>
+                <div class="course_detail_price">
+                  <span>Full Course</span> | <span>$5000</span>
+                </div>
+                <div class="course_detail_btn">
+                  <button onclick="coursesClick('data')">Learn More</button>
+                </div>
+              </div>
+            </div>
+            <div class="courses_card">
+              <div class="courses_card_img">
+                <img src="./assets/report-analytics.jfif" alt="reporting-img" />
+              </div>
+              <div class="courses_card_title">Reporting Analytics</div>
+              <div class="courses_card_info">Python for professionals</div>
+
+              <div class="course_detail">
+                <div class="course_detail_hours">
+                  <span>Hours</span> | <span>200+</span>
+                </div>
+                <div class="course_detail_price">
+                  <span>Full Course</span> | <span>$5000</span>
+                </div>
+                <div class="course_detail_btn">
+                  <button onclick="coursesClick('reporting')">
+                    Learn More
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="courses_card">
+              <div class="courses_card_img">
+                <img src="./assets/etl-imagee.png" alt="etl-img" />
+              </div>
+              <div class="courses_card_title">ETL</div>
+              <div class="courses_card_info">Python for professionals</div>
+
+              <div class="course_detail">
+                <div class="course_detail_hours">
+                  <span>Hours</span> | <span>200+</span>
+                </div>
+                <div class="course_detail_price">
+                  <span>Full Course</span> | <span>$5000</span>
+                </div>
+                <div class="course_detail_btn">
+                  <button onclick="coursesClick('etl')">Learn More</button>
+                </div>
+              </div>
+            </div>
+            <div class="courses_card">
+              <div class="courses_card_img">
+                <img src="./assets/python-logo.jfif" alt="python-img" />
+              </div>
+              <div class="courses_card_title">Python</div>
+              <div class="courses_card_info">Python for professionals</div>
+
+              <div class="course_detail">
+                <div class="course_detail_hours">
+                  <span>Hours</span> | <span>200+</span>
+                </div>
+                <div class="course_detail_price">
+                  <span>Full Course</span> | <span>$5000</span>
+                </div>
+                <div class="course_detail_btn">
+                  <button onclick="coursesClick('python')">Learn More</button>
+                </div>
+              </div>
+            </div>
+            <div class="courses_card">
+              <div class="courses_card_img">
+                <img src="./assets/excel-vba.webp" alt="vba-img" />
+              </div>
+              <div class="courses_card_title">Excel VBA</div>
+              <div class="courses_card_info">Python for professionals</div>
+
+              <div class="course_detail">
+                <div class="course_detail_hours">
+                  <span>Hours</span> | <span>200+</span>
+                </div>
+                <div class="course_detail_price">
+                  <span>Full Course</span> | <span>$5000</span>
+                </div>
+                <div class="course_detail_btn">
+                  <button onclick="coursesClick('excel')">Learn More</button>
+                </div>
+              </div>
+            </div>
+            <div class="courses_card">
+              <div class="courses_card_img">
+                <img src="./assets/tableau.png" alt="tableau-img" />
+              </div>
+              <div class="courses_card_title">Tableau</div>
+              <div class="courses_card_info">Python for professionals</div>
+
+              <div class="course_detail">
+                <div class="course_detail_hours">
+                  <span>Hours</span> | <span>200+</span>
+                </div>
+                <div class="course_detail_price">
+                  <span>Full Course</span> | <span>$5000</span>
+                </div>
+                <div class="course_detail_btn">
+                  <button onclick="coursesClick('tableau')">Learn More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Available Courses Modal  -->
+      <div id="modal_container" class="courses_modal_container">
+        <div class="courses_modal_wrapper">
+          <div id="close_btn" class="close_btn" onclick="modalClose()">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="courses_modal_header">
+            <h2 id="course_title">Course Title</h2>
+          </div>
+          <hr />
+          <div id="courses_modal_top" class="courses_modal_top">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Repellendus, vero rem! Iste, laborum quo porro error culpa hic nulla
+            rerum aut saepe quia cumque! Dignissimos modi facere necessitatibus
+            officia dolor.
+          </div>
+          <hr />
+          <div id="courses_modal_bottom" class="courses_modal_bottom">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
+            dolorem vel repellendus suscipit officia consequatur expedita
+            nostrum atque, distinctio nulla modi veritatis facilis minus libero
+            accusantium, pariatur quam ex iure?
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About us Section  -->
+    <section id="about" class="section_container about">
+      <div class="section_wrapper about">
+        <div class="section_header">
+          <h2>About Us</h2>
+        </div>
+        <div class="about_main">
+          <div class="about_main_top">
+            <div class="about_main_top_shape">
+              <div class="about_main_top_title">
+                What makes us <b>Different?</b>
+              </div>
+              <div class="about_main_top_subtitle">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Aspernatur tempora aut repudiandae aperiam omnis nulla.
+              </div>
+
+              <div class="about_main_top_img">
+                <img src="./assets/group-photo.png" alt="about-img" />
+              </div>
+            </div>
+          </div>
+          <div class="about_main_bottom">
+            <div class="about_main_bottom_info">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Aspernatur tempora aut repudiandae aperiam omnis nulla iusto fugit
+              praesentium impedit pariatur, ipsum est reprehenderit mollitia
+              amet, debitis sapiente nemo culpa cum?
+            </div>
+            <div class="about_main_cards">
+              <div class="about_main_card card1">
+                <div class="card_num">25+</div>
+                <div class="card_detail">Candidates trained</div>
+              </div>
+              <div class="about_main_card card2">
+                <div class="card_num">2400+</div>
+                <div class="card_detail">Training Hours</div>
+              </div>
+              <div class="about_main_card card3">
+                <div class="card_num">96%</div>
+                <div class="card_detail">Repeated clients</div>
+              </div>
+              <div class="about_main_card card3">
+                <div class="card_num">9.7/10</div>
+                <div class="card_detail">Avg Rating</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section  -->
+    <section id="contact" class="section_container contact">
+      <div class="section_wrapper contact">
+        <div class="section_header">
+          <h2>Contact Us</h2>
+        </div>
+        <div class="contact_main">
+          <div class="contact_main_left">
+            <img src="./assets/contact-img.svg" alt="contact_img" />
+          </div>
+          <div class="contact_main_right">
+            <form class="contact_form" onsubmit="handleSubmit()">
+              <input id="name" type="text" placeholder="Enter your name" />
+              <input id="email" type="email" placeholder="Enter your email" />
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Enter your message"
+              ></textarea>
+              <div class="submit_btn">
+                <button type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section  -->
+    <section id="footer" class="section_container footer">
+      <div class="section_wrapper footer">
+        <div class="footer_top">
+          <div class="logo">
+            <a href="#hero">
+              <img src="./assets/analyticshala.logo.png" alt="logo" />
+            </a>
+          </div>
+        </div>
+        <div class="footer_middle">
+          <div class="footer_middle_left">
+            <div class="footer_middle_left_solution">
+              <div class="title">Solutions</div>
+              <ul>
+                <li>Control</li>
+                <li>Scalibility</li>
+                <li>Experts</li>
+                <li>Performance</li>
+              </ul>
+            </div>
+            <div class="footer_middle_left_product">
+              <div class="title">Product</div>
+              <ul>
+                <li>Control</li>
+                <li>Scalibility</li>
+                <li>Experts</li>
+                <li>Performance</li>
+              </ul>
+            </div>
+            <div class="footer_middle_left_company">
+              <div class="title">Company</div>
+              <ul>
+                <li>Control</li>
+                <li>Scalibility</li>
+                <li>Experts</li>
+                <li>Performance</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer_middle_right">
+            <div class="shape">
+              <div class="logo">
+                <a href="#hero">
+                  <img src="./assets/analyticshala.logo.png" alt="logo" />
+                </a>
+              </div>
+            </div>
+            <div class="social_icons">
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-square-facebook"></i>
+              <i class="fa-brands fa-square-twitter"></i>
+              <i class="fa-brands fa-square-instagram"></i>
+            </div>
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <div class="footer_bottom_left">
+            Copyright 2023 Analyticshala. All rights reserved
+          </div>
+          <div class="footer_bottom_right">
+            <span>Privacy Policy</span>
+            <span>Terms of use</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
